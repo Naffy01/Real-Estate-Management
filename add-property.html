@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <
+
+    <!-- START: JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- START: jQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- END: jQUERY -->
+    
+    
+    <script src="./scripts/site.js"></script>
+    <!-- END: JAVASCRIPT -->
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">Real Estate</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./property.html">Properties</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Add New
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./add-property.html">Property</a>
+
+           
+          </div>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<div class="formDiv">
+  <label for="rate">Proprty Type:</label> <br>
+  <select name="studetId" id="studentId" >
+    <option value="1">For Sale</option>
+     <option value="2">To Rent</option> <br>
+  </select> <br>
+
+  <label for="rate">Proprty Category:</label> <br>
+  <select name="studetId" id="studentId" >
+    <option value="1">Apartament</option>
+     <option value="2">Villa</option> 
+     <option value="2">Office</option> 
+     <option value="2">Shop</option> 
+     <option value="2">Land</option> <br>
+  </select> <br>
+      
+  <form id="addproperty">
+      <label for="fname">City:</label><br>
+      <input  placeholder="Enter City"  id="City" value="" type="text"> <br>
+      <label for="lname">Zone:</label><br>
+      <input  placeholder="Enter Zone"  id="Zone" value="" type="text"> <br>
+      
+      <label for="rate">Bedrooms:</label> <br>
+
+      <select name="studetId" id="studentId" >
+       <option value="1">1</option>
+        <option value="2">2</option> 
+        <option value="2">3</option> 
+        <option value="2">4</option> 
+        <option value="2">5</option> <br>
+     </select> <br>
+    
+    <label for="lname">Area:</label><br>
+    <input  placeholder="Enter Area"  id="Area" value="" type="text"> <br>
+    
+    <label for="lname">Price:</label><br>
+    <input  placeholder="Enter Price"  id="Price" value="" type="text"> <br>
+    <br><button class="btn btn-success" type="submit">Add Property</button>
+  </form>
+</div>
+
+    <script>
+      window.onload = function() {
+        getPropertyDropDown();
+      };
+    </script>
+    
+</body>
+</html>
